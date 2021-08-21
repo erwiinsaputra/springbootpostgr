@@ -10,6 +10,8 @@ spec:
       name: spring-boot-postgres-sample
       labels:
         app: spring-boot-postgres-sample
+    selector:
+      app: spring-boot-postgres-sample
     spec:
       containers:
       - name: spring-boot-postgres-sample
