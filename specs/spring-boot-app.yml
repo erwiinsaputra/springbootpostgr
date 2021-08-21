@@ -18,9 +18,9 @@ spec:
       - name: spring-boot-postgres-sample
         env:
           - name: POSTGRES_USER
-            value: postgres
+            value: testpostgre
           - name: POSTGRES_PASSWORD
-            value: v1b1cloud@123
+            value: asalaja
           - name: POSTGRES_HOST
-            value: url=jdbc:postgresql://postgres/springboot
+            value: url=jdbc:postgresql://testpostgre/postgres
         image: erwiinsaputra/spring-boot-postgres-on-k8s:v1
