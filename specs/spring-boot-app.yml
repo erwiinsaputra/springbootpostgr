@@ -5,14 +5,15 @@ metadata:
   namespace: default
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-postgres-sample
   template:
     metadata:
       name: spring-boot-postgres-sample
       labels:
         app: spring-boot-postgres-sample
-  selector:
-    matchLabels:
-      app: spring-boot-postgres-sample
+  
     spec:
       containers:
       - name: spring-boot-postgres-sample
