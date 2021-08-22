@@ -23,5 +23,7 @@ spec:
           - name: POSTGRES_PASSWORD
             value: v1b1cloud@123
           - name: POSTGRES_HOST
-            value: jdbc:postgresql://103.233.109.199:5432/postgres
+            value: 103.233.109.199
+          - name: POSTGRES_DB
+            value: postgres
         image: erwiinsaputra/spring-boot-postgres-on-k8s:v1
