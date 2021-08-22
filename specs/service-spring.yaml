@@ -5,8 +5,6 @@ metadata:
     app.kubernetes.io/instance: test
   name: spring-boot-postgres-sample
   namespace: default
-  resourceVersion: "149358"
-  uid: e45611d1-5222-4a2a-8d59-d8bf16eb08c7
 spec:
   clusterIP: 10.104.39.249
   clusterIPs:
