@@ -1,0 +1,65 @@
+addressType: IPv4
+apiVersion: discovery.k8s.io/v1
+endpoints:
+  - addresses:
+      - 10.1.0.69
+    conditions:
+      ready: true
+    nodeName: docker-desktop
+    targetRef:
+      kind: Pod
+      name: spring-boot-postgres-sample-6df59d9c9c-vtmrq
+      namespace: default
+      resourceVersion: '147377'
+      uid: 40f627ee-a6d5-4b5e-aadd-710d5f46781d
+kind: EndpointSlice
+metadata:
+  creationTimestamp: '2021-08-22T15:39:53Z'
+  generateName: spring-boot-postgres-sample-
+  generation: 2
+  labels:
+    app.kubernetes.io/instance: test
+    endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+    kubernetes.io/service-name: spring-boot-postgres-sample
+  managedFields:
+    - apiVersion: discovery.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:addressType': {}
+        'f:endpoints': {}
+        'f:metadata':
+          'f:generateName': {}
+          'f:labels':
+            .: {}
+            'f:app.kubernetes.io/instance': {}
+            'f:endpointslice.kubernetes.io/managed-by': {}
+            'f:kubernetes.io/service-name': {}
+          'f:ownerReferences':
+            .: {}
+            'k:{"uid":"e45611d1-5222-4a2a-8d59-d8bf16eb08c7"}':
+              .: {}
+              'f:apiVersion': {}
+              'f:blockOwnerDeletion': {}
+              'f:controller': {}
+              'f:kind': {}
+              'f:name': {}
+              'f:uid': {}
+        'f:ports': {}
+      manager: kube-controller-manager
+      operation: Update
+      time: '2021-08-22T15:42:40Z'
+  name: spring-boot-postgres-sample-k7fz5
+  namespace: default
+  ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: spring-boot-postgres-sample
+      uid: e45611d1-5222-4a2a-8d59-d8bf16eb08c7
+  resourceVersion: '148266'
+  uid: e4ff3355-a5fe-40f3-9652-8a3ba0ed001a
+ports:
+  - name: ''
+    port: 8080
+    protocol: TCP
