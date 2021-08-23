@@ -6,13 +6,6 @@ metadata:
   name: spring-boot-postgres-sample
   namespace: default
 spec:
-  clusterIP: 10.104.39.249
-  clusterIPs:
-  - 10.104.39.249
-  externalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - nodePort: 31835
     port: 8080
